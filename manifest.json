@@ -1,0 +1,13 @@
+{
+  "name": "Chingu Jiffy",
+  "description": "Jiffy will help you stay productive and stay inspired.",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "icons": {
+
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
+
+}

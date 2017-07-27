@@ -5,7 +5,7 @@ aka secret sauce.
 
 ## Unique twists for our project
 - Pomodoro timer
-- Ability to receive Slack chat message mentions you
+- Ability to receive Slack chat messages that mentions you
 - Random quote generator that gives you the ability to choose what type
 	of random quotes you would like to see.
 

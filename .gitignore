@@ -1,0 +1,3 @@
+#ignore first line
+node_modules
+dist

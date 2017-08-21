@@ -1,7 +1,7 @@
 {
-  "name": "react-boilerplate",
+  "name": "Chingu-Jiffy",
   "version": "1.0.0",
-  "description": "boilerplate for future projects",
+  "description": "Chingu Jiffy Momentum chrom extension clone",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server"
@@ -9,7 +9,7 @@
   "keywords": [
     "react"
   ],
-  "author": "Kiki Morgan",
+  "author": "Chingu Turtles Team 15",
   "license": "ISC",
   "dependencies": {
     "react": "^15.6.1",

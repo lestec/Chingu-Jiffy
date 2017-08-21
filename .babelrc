@@ -1,0 +1,13 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "browsers": ["last 2 versions"]
+      },
+      "modules": false,
+      "debug": true
+    }],  // end of env
+    "react"
+
+  ] // end of presets
+}

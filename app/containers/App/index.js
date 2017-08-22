@@ -12,13 +12,15 @@ import PropTypes from 'prop-types';
 
 //import components
 //imported using resolve.alias to shorten import name
-//import LocalTime from 'Components/clock/clock';
+import LocalTime from 'Components/Clock/index';
+import TodoMain from 'Components/TodoList/index';
 
 export default class App extends React.Component {
   render() {
     return (
       <div>
-       please work
+        <LocalTime />
+        <TodoMain />
       </div>
     )
   }

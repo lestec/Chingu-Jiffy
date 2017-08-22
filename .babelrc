@@ -9,5 +9,8 @@
     }],  // end of env
     "react"
 
-  ] // end of presets
+  ], // end of presets
+  "plugins": [
+    "lodash"
+  ]
 }

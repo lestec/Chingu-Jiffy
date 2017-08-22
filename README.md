@@ -29,4 +29,3 @@ yarn run start
 
 #### troubleshooting
 We used Node v8.2.1 when creating the project. If you are not running a similar version, you might run into a few issues.
-

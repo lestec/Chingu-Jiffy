@@ -1,7 +1,7 @@
 {
   "name": "Chingu-Jiffy",
   "version": "1.0.0",
-  "description": "Chingu Jiffy Momentum chrom extension clone",
+  "description": "Chingu Jiffy Momentum chrome extension clone",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server"

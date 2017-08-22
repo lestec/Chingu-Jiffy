@@ -3,10 +3,6 @@ const webpack = require('webpack');
 
 //plugins
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-//FriendlyErrorsWebpackPlugin
-//ExtractTextPlugin
-//NoEmitOnErrorsPlugin
-//NamedModulesPlugin
 
 module.exports = {
   entry: [
@@ -31,7 +27,7 @@ module.exports = {
       },
       { test: /\.(js)$/, use: 'babel-loader' },
       { test: /\.css$/, use: ['style-loader', 'css-loader' ]}
-    ], //end of rules
+    ], //end of loaders
   },//end of module
 
   resolve: {

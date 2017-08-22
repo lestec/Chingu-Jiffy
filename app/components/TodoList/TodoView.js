@@ -6,8 +6,8 @@ function RenderButtonChange(props){
   if(props.isEditing){
     return(
       <span>
-        <button onClick= {props.onEditClick.bind(this)}> Save </button>
-        <button> Cancel </button>
+        <button onClick= {props.onSaveClick.bind(this)}> Save </button>
+        <button onClick= {props.onCancelClick.bind(this)}> Cancel </button>
       </span>
     )
   }
@@ -27,8 +27,18 @@ function RenderTodoItem(props){
     textDecoration: isCompleted ? 'line-through' : 'none'
   }
 
+  if(props.isEditing){
+    return(
+      <span>
+        <form onSubmit ={props.onSaveClick.bind(this)}>
+          <input type="text" defaultValue = {props.todos.todo} ref ='"editInput' />
+          </form>
+      </span>
+    )
+  }
+
   return(
-    <span style = {completedStyle} onClick = {props.toggleCompleted.bind(this, props.todos.todo)}>{props.todos.todo   }</span>
+    <span style = {completedStyle} onClick = {props.toggleCompleted.bind(this, props.todos.todo)}>{props.todos.todo}</span>
   )
 }
 
@@ -45,10 +55,17 @@ function FormatTodos(props){
           <RenderTodoItem
             todos = {todos}
             toggleCompleted = {props.toggleCompleted}
+            isEditing = {props.isEditing}
+            onSaveClick = {props.onSaveClick}
+
           />
           <RenderButtonChange
             isEditing = {props.isEditing}
             onEditClick = {props.onEditClick}
+            saveTodo = {props.saveTodo}
+            onCancelClick = {props.onCancelClick}
+            onSaveClick = {props.onSaveClick}
+
           />
           </li>
         )
@@ -64,8 +81,6 @@ function FormatTodos(props){
 class TodoView extends React.Component {
    constructor(props){
     super(props);
-
-    //this.props.toggleCompleted = this.props.toggleCompleted.bind(this);
   }
 
 
@@ -77,6 +92,9 @@ class TodoView extends React.Component {
         isEditing = {this.props.isEditing}
         onEditClick = {this.props.onEditClick}
         toggleCompleted = {this.props.toggleCompleted}
+        saveTodo = {this.props.saveTodo}
+        onCancelClick = {this.props.onCancelClick}
+        onSaveClick = {this.props.onSaveClick}
         />
       </div>
     )

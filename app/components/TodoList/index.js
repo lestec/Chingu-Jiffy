@@ -17,27 +17,38 @@ class TodoMain extends React.Component {
     super(props);
 
     this.state ={
-      todos: [
-        // {
-        //   todo: 'breathe',
-        //   isCompleted: true
-        // },
-        // {
-        //   todo: 'finish todoApp',
-        //   isCompleted: false
-        // }
-      ],
+      todos: [ ],
       isEditing: false,
     };
     //bind this to functions written on the component
     this.onEditClick = this.onEditClick.bind(this);
     this.addTodos = this.addTodos.bind(this);
     this.toggleCompleted = this.toggleCompleted.bind(this);
+    this.saveTodo = this.saveTodo.bind(this);
+    this.onCancelClick = this.onCancelClick.bind(this);
+    this.onSaveClick = this.onSaveClick.bind(this);
   }
 
   onEditClick(){
     this.setState({
-      isEditing: !this.state.isEditing
+      isEditing: true
+    });
+  }
+
+  onSaveClick(event){
+   event.preventDefault();
+   const oldTodo = this.state.todos.todo
+   const newTodo = this.refs.editInput.value
+   this.saveTodo(oldTodo, newTodo);
+   this.setState({
+      isEditing: false
+    });
+
+  }
+
+   onCancelClick(){
+    this.setState({
+      isEditing: false
     });
   }
 
@@ -57,12 +68,23 @@ class TodoMain extends React.Component {
       const foundTodo = _.find(this.state.todos, function(x){
         return x.todo === todo;
       });
-      console.log(foundTodo);
       foundTodo.isCompleted = !foundTodo.isCompleted;
       this.setState({
         todos: this.state.todos
       });
 
+    }
+
+    saveTodo(oldTodo, newTodo){
+        const foundTodo = _.find(this.state.todos, function(x){
+        return x.todo === oldTodo;
+      });
+
+      foundTodo.todo = newTodo;
+
+      this.setState({
+        todos: this.state.todos
+      });
     }
 
 
@@ -76,6 +98,9 @@ class TodoMain extends React.Component {
           isEditing = {this.state.isEditing}
           onEditClick = {this.onEditClick}
           toggleCompleted = {this.toggleCompleted}
+          saveTodo = {this.saveTodo}
+          onCancelClick = {this.onCancelClick}
+          onSaveClick = {this.onSaveClick}
        />
 
       </div>

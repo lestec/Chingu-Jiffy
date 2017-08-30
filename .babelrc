@@ -11,6 +11,8 @@
 
   ], // end of presets
   "plugins": [
-    "lodash"
+    "lodash",
+    "transform-object-rest-spread",
+    "transform-class-properties"
   ]
 }

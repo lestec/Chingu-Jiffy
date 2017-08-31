@@ -3,7 +3,6 @@ entry file for the app, only setup and boilerplate code
 */
 
 
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 

@@ -1,13 +1,11 @@
-import _ from 'lodash';
-
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import TodoItem from './TodoItem';
+import {TodoItem} from './TodoItem';
 
 
 
-const TodoList = (props) => {
+export const TodoList = (props) => {
 
   return (
     <ul>
@@ -24,9 +22,6 @@ const TodoList = (props) => {
     </ul>
   )
 }
-
-
-export default TodoList;
 
 TodoList.propTypes ={
   todos: PropTypes.array.isRequired

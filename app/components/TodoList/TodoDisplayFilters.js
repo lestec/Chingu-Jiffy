@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import {Link} from 'Router/index'
+import {Link} from 'Router'
 
-const TodoDisplayFilters = () => {
+export const TodoDisplayFilters = () => {
   return (
     <div className= 'display-filters'>
       <Link to='/'> All </Link>
@@ -12,5 +12,3 @@ const TodoDisplayFilters = () => {
     </div>
   )
 }
-
-export default TodoDisplayFilters;

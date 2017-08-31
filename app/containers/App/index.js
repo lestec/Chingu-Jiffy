@@ -12,8 +12,8 @@ import PropTypes from 'prop-types';
 
 //import components
 //imported using resolve.alias to shorten import name
-import LocalTime from 'Components/Clock/index';
-import TodoMain from 'Components/TodoList/index';
+import LocalTime from 'Components/Clock';
+import TodoMain from 'Containers/Todoapp';
 
 export default class App extends React.Component {
   render() {

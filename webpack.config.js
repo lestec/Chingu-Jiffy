@@ -37,7 +37,9 @@ module.exports = {
   resolve: {
     alias: {
       Components: path.resolve(__dirname, 'app/components/'),
-      Containers: path.resolve(__dirname, 'app/containers/')
+      Containers: path.resolve(__dirname, 'app/containers/'),
+      Utils: path.resolve(__dirname, 'app/utils/'),
+      Router: path.resolve(__dirname, 'app/router/')
     },
     extensions: ['*', '.js', '.jsx']
   },

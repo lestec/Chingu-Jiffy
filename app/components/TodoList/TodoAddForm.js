@@ -2,19 +2,30 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 
-class TodoAddForm extends React.Component {
-   constructor(props){
-    super(props);
-  }
+const TodoAddForm =(props) => (
 
-  render(){
-    return(
-      <form>
-        <input type ="text" placeholder= "What do you need to do?"/>
+      <form onSubmit={props.handleSubmit}>
+        <input
+          type ="text"
+          placeholder= "What do you need to do?"
+          value ={props.currentTodo}
+          onChange={props.handleInputChange}
+        />
         <button> Add Todo </button>
       </form>
-    )
-  }
+)
 
-}
 export default TodoAddForm;
+
+TodoAddForm.propTypes ={
+  currentTodo: PropTypes.string.isRequired,
+  handleInputChange: PropTypes.func.isRequired,
+  handleSubmit: PropTypes.func.isRequired
+}
+
+
+
+
+
+
+

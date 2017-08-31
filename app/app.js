@@ -3,13 +3,18 @@ entry file for the app, only setup and boilerplate code
 */
 
 
-//import third party stuff
+
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+//import third party stuff
 import { AppContainer } from 'react-hot-loader';
 
 //import root app
 import App from 'Containers/App/index';
+
+//import router
+import {Router} from 'Router/index'
 
 //import css reset and global styles
 
@@ -18,7 +23,9 @@ import App from 'Containers/App/index';
 
 ReactDOM.render(
   <AppContainer>
-    <App/>
+    <Router>
+      <App/>
+    </Router>
   </AppContainer>,
   document.getElementById('app')
 );

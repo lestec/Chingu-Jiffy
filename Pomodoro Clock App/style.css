@@ -1,0 +1,30 @@
+body {
+  background-color: #fafafa;
+  background-size: 100%;
+  background-attachment: fixed;
+  color: black;
+  font-family: "Montserrat";
+}
+
+.container {
+  width: 500px;
+  margin-bottom: 1em;
+}
+
+.app {
+  border: solid 1px #324E7B;
+  background-color: #86A6DF;
+  color: black;
+}
+
+h2 {
+  display: inline;
+}
+
+.title1 {
+  margin-bottom: 1em;
+}
+
+#start{
+  margin: 10px;
+}

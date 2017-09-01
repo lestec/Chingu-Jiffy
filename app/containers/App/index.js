@@ -13,6 +13,8 @@ import PropTypes from 'prop-types';
 //import components
 //imported using resolve.alias to shorten import name
 import TodoMain from 'Containers/Todoapp';
+import WeatherComponent from 'app/components/WeatherComponent/index.js';
+
 
 export default class App extends React.Component {
   render() {

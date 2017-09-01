@@ -1,0 +1,46 @@
+{
+  "presets": ["env", "react"],
+
+  "env": {
+    "test": {
+      "presets": [
+        ["env", {
+          "targets": {
+            "node": "current"
+          },
+          "debug": false
+        }],
+        "react"],
+
+      "plugins": [
+        "dynamic-import-node",
+        "transform-es2015-modules-commonjs",
+        "transform-object-rest-spread",
+        "transform-class-properties"
+      ]
+    },
+
+    "development": {
+      "presets": [
+        ["env", {
+          "targets": {
+            "browsers": ["last 2 versions"]
+          },
+          "modules": false,
+          "debug": true
+        }],  // end of env
+        "react"
+
+      ], // end of presets
+
+      "plugins": [
+        "lodash",
+        "transform-object-rest-spread",
+        "transform-class-properties"
+      ], //end of plugins
+    }
+
+  } //end of environment
+
+
+}

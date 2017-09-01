@@ -12,7 +12,7 @@ import PropTypes from 'prop-types';
 
 //import components
 //import using resolve.alias to shorten import name
-
+import WeatherComponent from 'app/components/WeatherComponent/index.js';
 
 export default class App extends React.Component {
   render() {

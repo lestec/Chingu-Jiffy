@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
-const WUNDERGROUND_KEY = "Your_API_KEY";
+
+const WUNDERGROUND_KEY = "6e76dbb544fd05c1";
 
 const SUPPORTED_LANGUAGES = [
         "EN"
@@ -12,7 +13,7 @@ function getTemp (temp) {
 }
 
 
-export default class WeatherApp extends Component {
+class WeatherApp extends Component {
 
   constructor (props) {
       super(props);
@@ -111,3 +112,4 @@ renderWeatherToday () {
   }
 }
 
+export default WeatherApp;

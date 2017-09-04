@@ -7,12 +7,13 @@ that will be seen on all pages (if we have multiple pages)
 */
 
 
+
 import React from 'react';
 import PropTypes from 'prop-types';
 
 //import components
 //import using resolve.alias to shorten import name
-import WeatherApp from './app/components/WeatherComponent/index';
+import WeatherApp from 'Components/WeatherComponent/index.js';
 
 export default class App extends React.Component {
   render() {
@@ -26,8 +27,11 @@ export default class App extends React.Component {
         and checkout webpack.config.js for resolve aliases that can be used to
         shorted import file name <br/>
         and this dev-server does have hotloading and other cool packages, check out package.json
-        </p>
+        </p> 
+        <WeatherApp />
       </div>
+      
+
     )
   }
 }

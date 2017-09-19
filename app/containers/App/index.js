@@ -13,7 +13,8 @@ import PropTypes from 'prop-types';
 //import components
 //imported using resolve.alias to shorten import name
 import TodoMain from 'Containers/Todoapp';
-import WeatherComponent from 'app/components/WeatherComponent/index.js';
+import WeatherComponent from 'Components/WeatherComponent';
+import DailyFocus from 'Containers/DailyFocus';
 
 
 export default class App extends React.Component {
@@ -21,6 +22,7 @@ export default class App extends React.Component {
     return (
       <div>
         <TodoMain />
+        <DailyFocus />
       </div>
     )
   }

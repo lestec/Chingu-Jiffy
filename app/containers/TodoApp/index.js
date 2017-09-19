@@ -8,9 +8,9 @@ import PropTypes from 'prop-types';
 
 //import related components
 import {TodoAddForm, TodoList, TodoDisplayFilters} from 'Components/TodoList';
-import {addTodo, generateId, findById, toggleTodo, updateTodo, removeTodo, filterTodos} from 'Utils/todoHelpers';
+import {addTodo, generateId, findById, toggleTodo, updateTodo, removeTodo, filterTodos} from 'TodoUtils/todoHelpers';
 import {partial, pipe} from 'Utils/utils'
-import {loadTodos, createTodo, saveTodo, destroyTodo} from 'Utils/todoService'
+import {loadTodos, createTodo, saveTodo, destroyTodo} from 'TodoUtils/todoService'
 
 class TodoMain extends React.Component {
   state ={

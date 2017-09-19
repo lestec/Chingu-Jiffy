@@ -1,0 +1,60 @@
+pseudo code
+on double click find item by id,
+edit function, takes id creates an input box
+the value of said box is the todo.text
+allow user to edit and then on submit, change
+todo.text visually and in the database
+
+use form so input can be submitted with enter or button
+
+
+find index
+
+change editing state to true, which changes button display
+
+can either do double click and form submit as a way to save changes or change the edit state with a button click and then change it again with another button click
+
+add counting functionality?
+
+on double click, a text input box appears, with the value as todo.text. when you submit the form (by button or enter key), the todo.text changes (in the display and in the database)
+  styling wise, the color of the text changes to let you know that you are in editing mode and a save button appears
+
+
+
+
+
+daily goal
+
+p-what is your main focus for today?
+
+input form, text, no button
+
+display:
+today
+input.text
+
+toggle completed, and delete functionality
+
+when completed "good job" message displayed below, (and delete button becomes add button and the original what is your main focus comes up-add later)
+
+
+if(this.state.isSubmitted){
+      <AddForm
+        currentFocus = {this.state.currentFocus}
+        handleInputChange ={this.handleInputChange}
+        handleSubmit = {submitHandler}
+      />
+
+      {this.state.errorMessage && <span className='error'>{this.state.errorMessage}</span>}
+      {this.state.message && <span className='success'>{this.state.message}</span>}
+
+    } else {
+      <DisplayFocus
+        focusList = {this.state.focusList}
+        handleRemove = {this.handleRemove}
+        handleToggle = {this.handleToggle}
+
+      />
+
+      {this.state.message && <span className='success'>{this.state.message}</span>}
+    }

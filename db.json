@@ -1,13 +1,48 @@
 {
   "todos": [
     {
-      "id": 31827,
+      "id": 66349,
       "text": "please work",
-      "isComplete": true
+      "isComplete": false,
+      "isEditing": false
     },
     {
-      "id": 57821,
+      "id": 10643,
       "text": "testing",
+      "isComplete": true,
+      "isEditing": false
+    },
+    {
+      "id": 77365,
+      "text": "testing one two three",
+      "isComplete": false,
+      "isEditing": false
+    }
+  ],
+  "focus": [
+    {
+      "id": 1,
+      "text": "testing goal",
+      "isComplete": false
+    },
+    {
+      "id": 2961,
+      "text": "fdad",
+      "isComplete": false
+    },
+    {
+      "id": 75222,
+      "text": "fdsa",
+      "isComplete": false
+    },
+    {
+      "id": 50310,
+      "text": "gjkh;",
+      "isComplete": false
+    },
+    {
+      "id": 76798,
+      "text": "fdafa",
       "isComplete": false
     }
   ]

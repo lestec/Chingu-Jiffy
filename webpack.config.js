@@ -34,6 +34,8 @@ module.exports = {
     alias: {
       Components: path.resolve(__dirname, 'app/components/'),
       Containers: path.resolve(__dirname, 'app/containers/'),
+      TodoUtils: path.resolve(__dirname, 'app/utils/todos/'),
+      FocusUtils: path.resolve(__dirname, 'app/utils/focus/'),
       Utils: path.resolve(__dirname, 'app/utils/'),
       Router: path.resolve(__dirname, 'app/router/')
     },

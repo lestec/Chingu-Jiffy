@@ -7,6 +7,7 @@ that will be seen on all pages (if we have multiple pages)
 */
 
 
+
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -24,7 +25,8 @@ export default class App extends React.Component {
         <TodoMain />
         <DailyFocus />
       </div>
+
+
     )
   }
 }
-

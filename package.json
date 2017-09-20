@@ -9,7 +9,10 @@
   "author": "Chingu Turtles Team 15",
   "license": "MIT",
   "babel": {
-    "presets": ["env", "react"]
+    "presets": [
+      "env",
+      "react"
+    ]
   },
   "devDependencies": {
     "babel-core": "^6.25.0",
@@ -23,7 +26,16 @@
     "webpack-dev-server": "^2.6.1"
   },
   "dependencies": {
+    "body-parser": "^1.18.1",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "jsonwebtoken": "^8.0.1",
+    "method-override": "^2.3.9",
+    "mongoose": "^4.11.12",
+    "morgan": "^1.8.2",
+    "passport": "^0.4.0",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "request": "^2.82.0"
   }
 }
